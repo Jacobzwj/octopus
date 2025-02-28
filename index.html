@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI大章鱼</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img class="logo" src="https://cdn-icons-png.flaticon.com/512/1864/1864589.png" alt="AI大章鱼">
+      <h1 class="title">AI大章鱼</h1>
+      <p class="subtitle">有啥事就问记忆力超群的大章鱼！</p>
+    </div>
+    
+    <div class="card model-selector">
+      <label for="model-select" class="label">选择AI模型:</label>
+      <select id="model-select" class="select-model">
+        <option value="anthropic/claude-3.7-sonnet:beta">Claude 3.7</option>
+        <option value="openai/chatgpt-4o-latest">ChatGPT 4o</option>
+        <option value="openai/o3-mini">OpenAI O3 Mini</option>
+        <option value="deepseek/deepseek-r1">Deepseek R1</option>
+        <option value="google/gemini-2.0-flash-001" selected>Gemini 2.0</option>
+        <option value="x-ai/grok-2-1212">Grok 2</option>
+        <option value="x-ai/grok-2-mini">Grok 2 Mini</option>
+      </select>
+    </div>
+    
+    <button id="start-chat" class="btn-primary">开始对话</button>
+    
+    <div class="footer">
+      <p>AI大章鱼 © 2024</p>
+    </div>
+  </div>
+  
+  <script src="scripts.js"></script>
+</body>
+</html> 

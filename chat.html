@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI大章鱼 - 聊天</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- KaTeX - 数学公式渲染库 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="model-info">
+      <span id="model-display">当前模型: </span>
+      <button id="back-button" class="back-button">返回</button>
+    </div>
+    
+    <!-- 消息区域 -->
+    <div id="message-container" class="message-list">
+      <!-- 消息将通过JavaScript动态添加 -->
+    </div>
+    
+    <!-- 输入区域 -->
+    <div class="input-area">
+      <textarea 
+        id="message-input" 
+        class="message-input" 
+        placeholder="输入消息..." 
+        rows="1"
+      ></textarea>
+      <button 
+        id="send-button" 
+        class="send-button"
+      >发送</button>
+    </div>
+  </div>
+  
+  <script src="chat.js"></script>
+</body>
+</html> 
