@@ -7,7 +7,6 @@
 - 简洁美观的聊天界面
 - 支持多种AI模型选择（Claude、Gemini、GPT-4o等）
 - 基于OpenRouter API调用多家AI服务
-- 内置API密钥，用户无需设置
 - 响应式设计，适配移动端和桌面端
 
 ## 使用方法
